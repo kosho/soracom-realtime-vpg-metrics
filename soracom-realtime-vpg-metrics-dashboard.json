@@ -1,0 +1,243 @@
+[
+  {
+    "_id": "02fef4d0-54b0-11e7-b6f1-cd4f287c6097",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Soracom Realtime VPG Metrics",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"dae040c0-54ab-11e7-855a-6596298ec2c0\",\"panelIndex\":1,\"row\":11,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"3f2532c0-54ac-11e7-855a-6596298ec2c0\",\"panelIndex\":3,\"row\":8,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"0d6ee1b0-54af-11e7-855a-6596298ec2c0\",\"panelIndex\":7,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"51462150-54af-11e7-855a-6596298ec2c0\",\"panelIndex\":8,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"9768d790-54af-11e7-855a-6596298ec2c0\",\"panelIndex\":9,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"81a9f960-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":10,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"77cd6850-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":11,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"69ef7340-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":12,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"5c821a50-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":13,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"4e2a6160-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":14,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"3f3f1b00-54ba-11e7-9dd1-f17e055ea12d\",\"panelIndex\":15,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"5ca0e030-54aa-11e7-855a-6596298ec2c0\",\"panelIndex\":16,\"row\":5,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"},{\"col\":11,\"id\":\"0b7efac0-54be-11e7-9dd1-f17e055ea12d\",\"panelIndex\":18,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"73b11990-54cb-11e7-9dd1-f17e055ea12d\",\"panelIndex\":19,\"row\":11,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"0f99c440-54ec-11e7-9d33-9b2b57315cde\",\"panelIndex\":20,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":8,\"size_y\":3,\"panelIndex\":21,\"type\":\"visualization\",\"id\":\"5c813800-5d62-11e7-88ec-7f703eeb8e47\",\"col\":1,\"row\":5}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 40,000\":\"rgb(247,251,255)\",\"40,000 - 80,000\":\"rgb(198,219,239)\",\"80,000 - 120,000\":\"rgb(107,174,214)\",\"120,000 - 160,000\":\"rgb(33,113,181)\"},\"legendOpen\":false}},\"P-21\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "0d6ee1b0-54af-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge Average Packet Size",
+      "visState": "{\"title\":\"Soracom - Gauge Average Packet Size\",\"type\":\"metrics\",\"params\":{\"id\":\"7039ac40-54ae-11e7-855a-6596298ec2c0\",\"type\":\"gauge\",\"series\":[{\"id\":\"7039d350-54ae-11e7-855a-6596298ec2c0\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"7039d351-54ae-11e7-855a-6596298ec2c0\",\"type\":\"avg\",\"field\":\"traffic.statistics.avg.pkt.size\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Average Packet Size\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"bar_color_rules\":[{\"id\":\"721e4ac0-54ae-11e7-855a-6596298ec2c0\"}],\"background_color_rules\":[{\"id\":\"727851a0-54ae-11e7-855a-6596298ec2c0\"}],\"gauge_color_rules\":[{\"id\":\"a6c5c0f0-54ae-11e7-855a-6596298ec2c0\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "51462150-54af-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge Ethernet Bytes",
+      "visState": "{\"title\":\"Soracom - Gauge Ethernet Bytes\",\"type\":\"metrics\",\"params\":{\"id\":\"154ff0e0-54af-11e7-855a-6596298ec2c0\",\"type\":\"gauge\",\"series\":[{\"id\":\"154ff0e1-54af-11e7-855a-6596298ec2c0\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"154ff0e2-54af-11e7-855a-6596298ec2c0\",\"type\":\"avg\",\"field\":\"traffic.statistics.ethernet.bytes\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Ethernet Bytes\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"169fc970-54af-11e7-855a-6596298ec2c0\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\",\"background_color_rules\":[{\"id\":\"7383ffd0-54af-11e7-855a-6596298ec2c0\"}]},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "9768d790-54af-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge IP Bytes",
+      "visState": "{\"title\":\"Soracom - Gauge IP Bytes\",\"type\":\"metrics\",\"params\":{\"id\":\"154ff0e0-54af-11e7-855a-6596298ec2c0\",\"type\":\"gauge\",\"series\":[{\"id\":\"154ff0e1-54af-11e7-855a-6596298ec2c0\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"154ff0e2-54af-11e7-855a-6596298ec2c0\",\"type\":\"avg\",\"field\":\"traffic.statistics.ip.bytes\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"IP Bytes\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"169fc970-54af-11e7-855a-6596298ec2c0\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\",\"background_color_rules\":[{\"id\":\"7383ffd0-54af-11e7-855a-6596298ec2c0\"}]},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "dae040c0-54ab-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Timeseries Packets",
+      "visState": "{\"title\":\"Soracom - Timeseries Packets\",\"type\":\"metrics\",\"params\":{\"id\":\"e5882d90-54aa-11e7-855a-6596298ec2c0\",\"type\":\"timeseries\",\"series\":[{\"id\":\"e5882d91-54aa-11e7-855a-6596298ec2c0\",\"color\":\"rgba(128,128,128,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"e5882d92-54aa-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.fragmented.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Fragmented\"},{\"id\":\"1baca6d0-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(252,220,0,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"1baca6d1-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.ip.packets\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"IP\"},{\"id\":\"301012b0-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(251,158,0,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"301012b1-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.mpls.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"MLPLS\"},{\"id\":\"4be77410-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(104,188,0,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"4be77411-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.pppoe.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"PPPoE\"},{\"id\":\"604c6690-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(22,165,165,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"604c6691-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.tcp.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"TCP\"},{\"id\":\"69ed2720-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(0,156,224,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"69ed2721-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.udp.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"UDP\"},{\"id\":\"71e89c20-54ab-11e7-855a-6596298ec2c0\",\"color\":\"rgba(250,40,255,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"71e89c21-54ab-11e7-855a-6596298ec2c0\",\"type\":\"sum\",\"field\":\"traffic.statistics.vlan.pkts\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"VLAN\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "0b7efac0-54be-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge Max Packet Size",
+      "visState": "{\"title\":\"Soracom - Gauge Max Packet Size\",\"type\":\"metrics\",\"params\":{\"id\":\"dafb3da0-54bd-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"dafb3da1-54bd-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"dafb3da2-54bd-11e7-9dd1-f17e055ea12d\",\"type\":\"max\",\"field\":\"traffic.statistics.max.pkt.size\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Max Packet Size\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"dbcb37d0-54bd-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "69ef7340-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 128",
+      "visState": "{\"title\":\"Soracom - Gauge > 128\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_128_256\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 128\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "77cd6850-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 64",
+      "visState": "{\"title\":\"Soracom - Gauge > 64\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_64_128\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 64\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "81a9f960-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 0",
+      "visState": "{\"title\":\"Soracom - Gauge > 0\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_min64\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 0\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5ca0e030-54aa-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Tag Cloud Protocols",
+      "visState": "{\"title\":\"Soracom - Tag Cloud Protocols\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":26,\"maxFontSize\":100},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"detected.protos.name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"soracom-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3f2532c0-54ac-11e7-855a-6596298ec2c0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Swimlane Protocols",
+      "visState": "{\"title\":\"Soracom - Swimlane Protocols\",\"type\":\"heatmap\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Blues\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"detected.protos.bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"detected.protos.name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocols\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 30,000,000\":\"rgb(247,251,255)\",\"30,000,000 - 60,000,000\":\"rgb(198,219,239)\",\"60,000,000 - 90,000,000\":\"rgb(107,174,214)\",\"90,000,000 - 120,000,000\":\"rgb(33,113,181)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"soracom-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4e2a6160-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 1024",
+      "visState": "{\"title\":\"Soracom - Gauge > 1024\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_1024_1500\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 1024\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3f3f1b00-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 1500",
+      "visState": "{\"title\":\"Soracom - Gauge > 1500\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_grt1500\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 1500\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5c821a50-54ba-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Gauge > 256",
+      "visState": "{\"title\":\"Soracom - Gauge > 256\",\"type\":\"metrics\",\"params\":{\"id\":\"ccaafb90-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"gauge\",\"series\":[{\"id\":\"ccaafb91-54b9-11e7-9dd1-f17e055ea12d\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ccaafb92-54b9-11e7-9dd1-f17e055ea12d\",\"type\":\"sum\",\"field\":\"traffic.statistics.pkt.len_256_1024\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Packets > 256\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"soracom-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"gauge_color_rules\":[{\"id\":\"cdf6dc80-54b9-11e7-9dd1-f17e055ea12d\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "73b11990-54cb-11e7-9dd1-f17e055ea12d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Elastic Cloud Promo",
+      "visState": "{\"title\":\"Soracom - Elastic Cloud Promo\",\"type\":\"markdown\",\"params\":{\"markdown\":\"![](https://s3-ap-northeast-1.amazonaws.com/jp.elastic.co/images/elastic-logo-xsmall.png)\\n### [Elastic Cloud](https://www.elastic.co/cloud) - The Official Hosted Elasticsearch & Kibana Offering on AWS\\n#### Deploy and manage a secure cluster running on Amazon with the latest versions of Elasticsearch and Kibana.\\n#### [Try it out.](https://www.elastic.co/cloud/as-a-service/signup) 14 days. No credit card required.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "0f99c440-54ec-11e7-9d33-9b2b57315cde",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Title",
+      "visState": "{\"title\":\"Soracom - Title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# 📡 Realtime VPG Metric Monitor Running on **Elastic Cloud** 🌩\\n\\n#### Metrics gathered every minute.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5c813800-5d62-11e7-88ec-7f703eeb8e47",
+    "_type": "visualization",
+    "_source": {
+      "title": "Soracom - Bar Bytes",
+      "visState": "{\"title\":\"Soracom - Bar Bytes\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"@timestamp per 30 seconds\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Sum of detected.protos.bytes\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Sum of detected.protos.bytes\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"detected.protos.bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"soracom-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  }
+]

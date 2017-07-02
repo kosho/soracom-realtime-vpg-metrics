@@ -1,0 +1,114 @@
+{
+  "template": "soracom-*",
+    "settings": {
+      "index": {
+        "number_of_shards": "1",
+        "number_of_replicas": "1"
+      }
+    },
+    "mappings": {
+      "stats": {
+        "properties": {
+          "traffic.statistics": {
+            "properties": {
+              "pkt.len_128_256": {
+                "type": "long"
+              },
+              "pkt.len_256_1024": {
+                "type": "long"
+              },
+              "pkt.len_grt1500": {
+                "type": "long"
+              },
+              "pkt.len_min64": {
+                "type": "long"
+              },
+              "guessed.flow.protos": {
+                "type": "long"
+              },
+              "pkt.len_1024_1500": {
+                "type": "long"
+              },
+              "pkt.len_64_128": {
+                "type": "long"
+              },
+              "tcp.pkts": {
+                "type": "long"
+              },
+              "discarded.bytes": {
+                "type": "long"
+              },
+              "ip.packets": {
+                "type": "long"
+              },
+              "max.pkt.size": {
+                "type": "long"
+              },
+              "avg.pkt.size": {
+                "type": "long"
+              },
+              "ethernet.bytes": {
+                "type": "long"
+              },
+              "udp.pkts": {
+                "type": "long"
+              },
+              "total.packets": {
+                "type": "long"
+              },
+              "fragmented.pkts": {
+                "type": "long"
+              },
+              "ip.bytes": {
+                "type": "long"
+              },
+              "pppoe.pkts": {
+                "type": "long"
+              },
+              "vlan.pkts": {
+                "type": "long"
+              },
+              "mpls.pkts": {
+                "type": "long"
+              },
+              "unique.flows": {
+                "type": "long"
+              }
+            }
+          },
+          "@timestamp": {
+            "format": "basic_date_time_no_millis||yyyy-MM-dd HH:mm:ss||epoch_millis",
+            "type": "date"
+          },
+          "known.flows": {
+            "properties": {}
+          },
+          "detected.protos": {
+            "include_in_parent": true,
+            "type": "nested",
+            "properties": {
+              "flows": {
+                "type": "long"
+              },
+              "bytes": {
+                "type": "long"
+              },
+              "name": {
+                "type": "keyword"
+              },
+              "breed": {
+                "type": "keyword"
+              },
+              "packets": {
+                "type": "long"
+              }
+            }
+          },
+          "vpgId": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+}
+
